@@ -3,10 +3,9 @@ miscr
 
 Stuff for R
 
-Vignettes: there are no vignettes for now
+Vignettes: there is one vignette that shows how to use both functions
 
-For now just `ls_objects()` to get an idea of what is living in the directory.
-
+For now just `ls_objects()` and `datem_conv`. More to come!
 
 You can install 
 
