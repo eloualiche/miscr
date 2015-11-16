@@ -1,6 +1,8 @@
 #' A package for miscellaneous stuff in R
 #'
 #' @docType package
-#' @name entrydatar
+#' @name miscr
 #' @importFrom dplyr "%>%"
+#' @import statar
+#' @import lubridate
 NULL

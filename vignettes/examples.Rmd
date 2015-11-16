@@ -1,0 +1,47 @@
+---
+title: "Examples for miscr"
+author: "Erik Loualiche"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+  # css:
+vignette: >
+  %\VignetteIndexEntry{Examples for miscr}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+So far we only have the function `ls_objects` to discover which data is loaded.
+
+## ls_objects
+
+Let's create a few objects in R
+```{r, results='asis'}
+library(data.table, dplyr)
+data(mtcars)
+data(iris)
+mtcars <- data.table(mtcars)
+x <- 1
+y <- c(0,1)
+```
+
+The results vary depending on options:
+```{r}
+miscr::ls_objects()
+miscr::ls_objects(database = F)
+```
+
+## datem_conv
+
+Easy to juggle with Ken French type of date format, yyymm and monthly specific date format for panel from statar yyyy'm'mm and vice versa. It is easy to see an example
+```{r}
+library(statar, lubridate)
+x <- 198312
+y <- miscr::datem_conv(x)
+y
+```
+And the reverse
+```{r}
+z <- miscr::datem_conv(y)
+z
+```
+
