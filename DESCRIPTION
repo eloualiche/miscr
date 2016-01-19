@@ -7,14 +7,15 @@ Authors@R: person("Erik", "Loualiche", email = "erikl@mit.edu", role = c("aut", 
 Description: Miscellaneous code that I find useful.
 License: MIT
 LazyData: TRUE
-Depends: 
+Depends:
     R (>= 3.2.0)
-Imports: 
+Imports:
     plyr       (>= 1.8.3),
     dplyr      (>= 0.4.3),
     data.table (>= 1.9.6),
     bit64      (>= 0.9)
-RoxygenNote: 5.0.0
-Suggests: knitr,
+RoxygenNote: 5.0.1
+Suggests:
+    knitr,
     rmarkdown
 VignetteBuilder: knitr

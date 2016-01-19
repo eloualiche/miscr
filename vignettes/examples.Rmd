@@ -2,8 +2,9 @@
 title: "Examples for miscr"
 author: "Erik Loualiche"
 date: "`r Sys.Date()`"
-output: rmarkdown::html_vignette
-  # css:
+output: 
+  rmarkdown::html_vignette:
+    css: tufte.css
 vignette: >
   %\VignetteIndexEntry{Examples for miscr}
   %\VignetteEngine{knitr::rmarkdown}
