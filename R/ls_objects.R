@@ -13,9 +13,14 @@
 #' @examples
 #' ls_objects()
 #' @export
-ls_objects <- function (pos = 1, order.by="Size", pattern="",
-                        decreasing=TRUE, head=FALSE, n=5,
-                        database = TRUE ) {
+ls_objects <- function (pos = 1,
+                        order.by="Size",
+                        pattern="",
+                        decreasing=TRUE,
+                        head=FALSE,
+                        n=5,
+                        database = TRUE
+){
 
   napply <- function(names, fn) sapply(names, function(x)
     fn(get(x, pos = pos)))
@@ -44,8 +49,14 @@ ls_objects <- function (pos = 1, order.by="Size", pattern="",
   obj.prettysize <- sapply(obj.size, function(r) prettyNum(r, big.mark = ",") )
   obj.dim <- t(napply(names, function(x)
     as.numeric(dim(x))[1:2]))
-  vec <- is.na(obj.dim)[, 1] & (obj.type != "function")
-  obj.dim[vec, 1] <- napply(names, length)[vec]
+
+  if ( length(is.na(obj.dim)) > 0 ){
+    vec <- is.na(obj.dim)[, 1] & (obj.type != "function")
+    obj.dim[vec, 1] <- napply(names, length)[vec]
+  } else {
+    warning("No data of type selected in memory.")
+    return(NULL)
+  }
 
   if ( database){
     out <- data.frame(obj.type, obj.size, memListing, obj.dim) %>%
@@ -67,5 +78,10 @@ ls_objects <- function (pos = 1, order.by="Size", pattern="",
   if (head)
     out <- head(out, n)
 
-  out
+  # print(out)
+
+  return(out)
 }
+
+
+
