@@ -4,20 +4,24 @@ author: "Erik Loualiche"
 date: "`r Sys.Date()`"
 output: 
   rmarkdown::html_vignette:
-    css: tufte.css
 vignette: >
   %\VignetteIndexEntry{Examples for miscr}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
 
-So far we only have the function `ls_objects` to discover which data is loaded.
 
-## ls_objects
+## `ls_objects`
 
-Let's create a few objects in R
+Let's create a few objects in R but before we want to load some libraries:
+```{r, results='hide', warning = F, error = F, message = F}
+library(miscr)
+library(data.table)
+library(magrittr)
+library(ggplot2)
+```
+
 ```{r, results='asis'}
-library(data.table, dplyr)
 data(mtcars)
 data(iris)
 mtcars <- data.table(mtcars)
@@ -27,22 +31,35 @@ y <- c(0,1)
 
 The results vary depending on options:
 ```{r}
-miscr::ls_objects()
-miscr::ls_objects(database = F)
+ls_objects()
+ls_objects(database = F)
 ```
 
-## datem_conv
+## `datem_conv`
 
 Easy to juggle with Ken French type of date format, yyymm and monthly specific date format for panel from statar yyyy'm'mm and vice versa. It is easy to see an example
 ```{r}
-library(statar, lubridate)
 x <- 198312
-y <- miscr::datem_conv(x)
-y
-```
-And the reverse
-```{r}
-z <- miscr::datem_conv(y)
-z
+y <- datem_conv(x)
+z <- datem_conv(y)
+print(y)
+print(z)
 ```
 
+
+## `fred_download`: clean dataset from Fred
+
+To download data from FRED, use the fredr library and put the data in a decent format.
+```{r, warning = F, message = F}
+dt_gdp <- getFred("GDP")
+dt_gdp
+```
+
+## `gg_bw`: mostly black & white theme
+
+```{r, fig.width=6.8, fig.height=2.55}
+p <- dt_gdp %>% 
+  ggplot( aes(date, GDP) ) + geom_line()
+p 
+p + gg_bw()
+```
