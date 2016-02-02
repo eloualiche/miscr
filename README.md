@@ -10,10 +10,7 @@ You can install
 
 	```R
 	library(devtools)
-	devtools::install_github(
-	  "erikl/miscr", 
-	  host = "github.mit.edu/api/v3", 
-	  auth_token = "d2c545def9a8e8d8e3bd9be1fa18a815dafa09a8")
+	devtools::install_github("eloualiche/miscr")
 	```
 
 
