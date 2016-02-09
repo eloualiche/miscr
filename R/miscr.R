@@ -44,6 +44,10 @@
 #'
 #' @importFrom statar as.monthly
 #'
+#' @importFrom sendmailR sendmail_options
+#' @importFrom sendmailR sendmail
+#' @importFrom sendmailR mime_part
+#'
 #' @importFrom stringr str_replace
 #' @importFrom stringr str_match
 #' @importFrom stringr str_detect
@@ -56,6 +60,8 @@
 #' @importFrom stats quantile
 #' @importFrom stats sd
 #' @importFrom stats setNames
+#'
+#'@importFrom R.utils System
 #'
 #' @importFrom tidyr gather_
 #' @importFrom tidyr spread

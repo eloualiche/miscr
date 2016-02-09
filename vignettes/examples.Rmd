@@ -55,6 +55,7 @@ dt_gdp <- getFred("GDP")
 dt_gdp
 ```
 
+
 ## `gg_bw`: mostly black & white theme
 
 ```{r, fig.width=6.8, fig.height=2.55}
@@ -63,3 +64,17 @@ p <- dt_gdp %>%
 p 
 p + gg_bw()
 ```
+
+
+## `emailme`: email results to self
+
+```{r, warning = F, message = F, results = 'hide'}
+emailme(dt_gdp)      # email data
+
+emailme(p + gg_bw()) # email plot
+
+dt_gdp
+emailme()            # email last result
+
+```
+
