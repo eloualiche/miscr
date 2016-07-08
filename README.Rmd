@@ -1,0 +1,36 @@
+---
+title: "README"
+author: "Erik Loualiche"
+date: "July 8, 2016"
+output: html_document
+---
+[![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](http://www.repostatus.org/badges/latest/active.svg)](http://www.repostatus.org/#active)
+[![Licence](https://img.shields.io/github/license/mashape/apistatus.svg)](http://choosealicense.com/licenses/mit/)
+ 
+---
+ 
+[![minimal R version](https://img.shields.io/badge/R%3E%3D-3.2.0-6666ff.svg)](https://cran.r-project.org/)
+[![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/miscr)](https://cran.r-project.org/package=miscr)
+[![packageversion](https://img.shields.io/badge/Package%20version-0.1-orange.svg?style=flat-square)](commits/master)
+ 
+---
+ 
+[![Last-changedate](https://img.shields.io/badge/last%20change-`r gsub('-', '--', Sys.Date())`-yellowgreen.svg)](/commits/master)
+
+miscr
+======
+
+Stuff for R
+
+Vignettes: there is one [vignette](./vignettes/examples.Rmd) that shows how to use both functions
+
+You can install 
+-  The current version from [github](https://github.mit.edu/eloualiche/miscr) with
+
+	```R
+	library(devtools)
+	devtools::install_github("eloualiche/miscr")
+	```
+
+
+

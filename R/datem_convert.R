@@ -2,7 +2,7 @@
 #'
 #' @param date: a monthly date either in yyyymm format or in monthly statar format
 #' @param fulldate: boolean
-#' @note Ueful to juggle with date types in monthly panel
+#' @note Useful to juggle with date types in monthly panel
 #' @return A date
 #' @examples
 #'   datem_conv(199901)
