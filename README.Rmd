@@ -14,8 +14,7 @@ output: html_document
 [![packageversion](https://img.shields.io/badge/Package%20version-0.1-orange.svg?style=flat-square)](commits/master)
  
 ---
- 
-[![Last-changedate](https://img.shields.io/badge/last%20change-`r gsub('-', '--', Sys.Date())`-yellowgreen.svg)](/commits/master)
+
 
 miscr
 ======
