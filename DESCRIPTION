@@ -27,7 +27,8 @@ Imports:
     sendmailR,
     stats,
     zoo,
-    tidyr
+    tidyr,
+    lazyeval
 RoxygenNote: 5.0.1
 Suggests:
     knitr,
