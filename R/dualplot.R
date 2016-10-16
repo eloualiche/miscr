@@ -9,7 +9,7 @@
 #' @note Useful for some time series representations
 #' @return ggplot object
 #' @examples
-#'   dualplot(x1, y1)
+#'   dualplot(1:100, runif(100), 10*runif(100))
 #' @export
 dualplot <- function(x1, y1, y2, x2 = x1,
                      col = c("#C54E6D", "#009380"),
