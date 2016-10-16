@@ -13,7 +13,9 @@ Imports:
     plyr       (>= 1.8.3),
     dplyr      (>= 0.4.3),
     data.table (>= 1.9.6),
-    bit64      (>= 0.9)
+    bit64      (>= 0.9),
+    ggplot2,
+    magrittr
 RoxygenNote: 5.0.1
 Suggests:
     knitr,

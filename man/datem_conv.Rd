@@ -18,7 +18,7 @@ A date
 datem_conv: convert date_ym and datem formats
 }
 \note{
-Ueful to juggle with date types in monthly panel
+Useful to juggle with date types in monthly panel
 }
 \examples{
   datem_conv(199901)
