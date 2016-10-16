@@ -77,7 +77,7 @@ miscr:::dualplot(dt_plot$date_daily, dt_plot$GDP, dt_plot$SP500, x2 = dt_plot$da
 
 ## `emailme`: email results to self
 
-```{r, warning = F, message = F, results = 'hide'}
+```{r, eval = F, results = 'hide'}
 emailme(dt_gdp)      # email data
 emailme(p + gg_bw()) # email plot
 emailme()            # email last result
