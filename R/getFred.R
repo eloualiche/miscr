@@ -10,7 +10,7 @@
 #'   For now quantmod is more up to date given FRED move to secure download
 #' @return dt: a data.table
 #' @examples
-#' dt_gdp <- fred_download("GDP", T)
+#' dt_gdp <- getFred("GDP", T)
 #' @export
 getFred <- function(fred_series,
                     date_ym = T,

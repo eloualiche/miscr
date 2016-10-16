@@ -67,8 +67,8 @@ p + gg_bw()
 
 ## `dualplot`: two time series with different axes
 ```{r, fig.width=6.8, fig.height=2.55}
-dt_gdp <- getFred("GDP")
-dt_sp <- getFred("SP500")
+dt_gdp  <- getFred("GDP")
+dt_sp   <- getFred("SP500")
 dt_plot <- merge(dt_gdp[, GDP := log(GDP)], 
                  dt_sp[, .(SP500 = log(SP500), date_daily = date, date_ym)], by = c("date_ym"))
 miscr:::dualplot(dt_plot$date_daily, dt_plot$GDP, dt_plot$SP500, x2 = dt_plot$date_daily,
