@@ -1,6 +1,8 @@
 miscr
 ======
 
+[![Build Status](https://travis-ci.org/eloualiche/miscr.svg?branch=master)](https://travis-ci.org/eloualiche/miscr)
+
 Stuff for R
 
 Vignettes: there is one [vignette](./vignettes/examples.Rmd) that shows how to use both functions

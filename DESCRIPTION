@@ -15,7 +15,8 @@ Imports:
     data.table (>= 1.9.6),
     bit64      (>= 0.9),
     ggplot2,
-    magrittr
+    magrittr,
+    R.utils
 RoxygenNote: 5.0.1
 Suggests:
     knitr,
