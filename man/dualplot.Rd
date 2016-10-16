@@ -34,6 +34,6 @@ dualplt: dualplot function from Peter Ellis (github.com/ellisp) for time series 
 Useful for some time series representations
 }
 \examples{
-  dualplot(x1, y1)
+  dualplot(1:100, runif(100), 10*runif(100))
 }
 
