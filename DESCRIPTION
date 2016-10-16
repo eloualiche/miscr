@@ -16,7 +16,18 @@ Imports:
     bit64      (>= 0.9),
     ggplot2,
     magrittr,
-    R.utils
+    R.utils,
+    lubridate,
+    matrixStats,
+    methods,
+    quantmod,
+    stargazer,
+    statar,
+    stringr,
+    sendmailR,
+    stats,
+    zoo,
+    tidyr
 RoxygenNote: 5.0.1
 Suggests:
     knitr,
