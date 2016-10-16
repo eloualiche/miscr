@@ -6,7 +6,6 @@
 #' @note print the current environment. package is meant to be used or database.
 #'   Uses pretty print to get an idea of how crowded is the memory on the system.
 #' @return NULL
-#' @examples nothing for now
 #' @export
 emailme <- function(out = NULL,
                     who = "erikl@mit.edu",
