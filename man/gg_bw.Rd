@@ -20,6 +20,7 @@ print the current environment. package is meant to be used or database.
   Uses pretty print to get an idea of how crowded is the memory on the system.
 }
 \examples{
+data(mtcars); library(ggplot2)
 p <- ggplot(mtcars, aes(x = wt, y = mpg)) + geom_point()
 p + gg_bw()
 }

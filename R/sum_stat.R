@@ -7,18 +7,6 @@
 #' @param d Should detailed summary statistics be printed?
 #' @param digits Number of significant decimal digits. Default to 3
 #' @param .dots Used to work around non-standard evaluation.
-#' @examples
-#' library(dplyr)
-#' N <- 100
-#' df <- data_frame(
-#'   id = 1:N,
-#'   v1 = sample(5, N, TRUE),
-#'   v2 = sample(1e6, N, TRUE)
-#' )
-#' sum_up(df)
-#' sum_up(df, v2, d = TRUE)
-#' sum_up(df, v2, d = TRUE, i = v1>3)
-#' df %>% group_by(v1) %>% sum_up(starts_with("v"))
 #' @return a data.frame
 #' @export
 sum_up <- function(x, ...,  d = FALSE, w = NULL,  i = NULL, digits = 3) {

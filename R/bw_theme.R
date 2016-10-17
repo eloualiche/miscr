@@ -4,7 +4,9 @@
 #' @note print the current environment. package is meant to be used or database.
 #'   Uses pretty print to get an idea of how crowded is the memory on the system.
 #' @return A theme for ggplot2
-#' @examples p <- ggplot(mtcars, aes(x = wt, y = mpg)) + geom_point()
+#' @examples
+#' data(mtcars); library(ggplot2)
+#' p <- ggplot(mtcars, aes(x = wt, y = mpg)) + geom_point()
 #' p + gg_bw()
 #' @export
 gg_bw <- function(base_size = 10

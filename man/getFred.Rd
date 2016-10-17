@@ -26,6 +26,6 @@ The download method through quantmod (default) or fredr are mutually exlcusive.
   For now quantmod is more up to date given FRED move to secure download
 }
 \examples{
-dt_gdp <- fred_download("GDP", T)
+dt_gdp <- getFred("GDP", date_ym = TRUE, quantmod = TRUE)
 }
 
