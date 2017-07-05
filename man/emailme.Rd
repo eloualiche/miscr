@@ -21,4 +21,3 @@ Email Me
 print the current environment. package is meant to be used or database.
   Uses pretty print to get an idea of how crowded is the memory on the system.
 }
-

@@ -2,11 +2,13 @@
 
 S3method(sum_up,data.frame)
 S3method(sum_up,default)
+export(data_to_pca)
 export(datem_conv)
 export(dualplot)
 export(emailme)
 export(getFred)
 export(gg_bw)
+export(gitlab_load)
 export(ls_objects)
 export(sum_up)
 export(sum_up_)

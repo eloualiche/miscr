@@ -35,4 +35,3 @@ print the current environment. package is meant to be used or database.
 \examples{
 ls_objects()
 }
-

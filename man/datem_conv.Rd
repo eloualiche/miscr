@@ -23,4 +23,3 @@ Useful to juggle with date types in monthly panel
 \examples{
   datem_conv(199901)
 }
-

@@ -36,4 +36,3 @@ Useful for some time series representations
 \examples{
   dualplot(1:100, runif(100), 10*runif(100))
 }
-

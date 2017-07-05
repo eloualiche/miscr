@@ -8,4 +8,3 @@
 \description{
 A package for miscellaneous stuff in R
 }
-

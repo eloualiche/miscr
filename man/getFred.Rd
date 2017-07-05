@@ -28,4 +28,3 @@ The download method through quantmod (default) or fredr are mutually exlcusive.
 \examples{
 dt_gdp <- getFred("GDP", date_ym = TRUE, quantmod = TRUE)
 }
-

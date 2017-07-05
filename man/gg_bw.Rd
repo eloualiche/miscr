@@ -24,4 +24,3 @@ data(mtcars); library(ggplot2)
 p <- ggplot(mtcars, aes(x = wt, y = mpg)) + geom_point()
 p + gg_bw()
 }
-

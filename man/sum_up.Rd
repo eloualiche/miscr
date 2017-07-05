@@ -30,4 +30,3 @@ a data.frame
 \description{
 Gives summary statistics (corresponds to Stata command summarize)
 }
-
